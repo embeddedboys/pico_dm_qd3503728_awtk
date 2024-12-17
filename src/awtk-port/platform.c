@@ -24,7 +24,6 @@
 #include "base/timer.h"
 
 ret_t platform_prepare(void) {
-  timer_hw->dbgpause = 0;
   return RET_OK;
 }
 
