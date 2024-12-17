@@ -47,25 +47,48 @@ sudo apt install minicom
 
 ## 1. 下载源码
 
-* awtk-pico
+* 下载 awtk-pico
 
 ```sh
 https://github.com/zlgopen/awtk-pico.git
 ```
 
-* pico-sdk
+* 进入 awtk-pico 目录
+```
+cd awtk-pico
+```
+
+* 下载 pico-sdk
 
 ```
 git clone https://github.com/raspberrypi/pico-sdk.git 3rd/pico-sdk
 ```
 
-* awtk
+* 下载 awtk
 
 ```
 git clone https://github.com/zlgopen/awtk.git src/awtk
 ```
 
 ## 2. 编译
+
+* 编译 awtk
+
+```
+cd src/awtk
+scons
+cd -
+```
+
+* 生成 demo 资源
+
+```
+cd src/demos/hello
+python scripts/update_res.py all
+cd -
+```
+
+* 编译 pico 固件
 
 > 请编辑 build_rp2040.sh，修改 PICO\_TOOLCHAIN\_PATH 为实际路径。
 
@@ -107,7 +130,17 @@ git clone https://github.com/zlgopen/awtk.git src/awtk
 
 测试所用显示屏的尺寸为 3.5 寸，分辨率为 480x320，[微雪](https://www.waveshare.net/wiki/Pico-ResTouch-LCD-3.5) 出品，如果使用其它硬件， 代码需要做相应调整。
 
-## 5. 参考资源
+## 注意事项
+
+* 为了将字体和图片等资源数据编译到代码中，需要修改示例项目的 project.json 文件：
+
+```
+ "const": "all_data",
+```
+
+参考：src/demos/hello/project.json
+
+## 7. 参考资源
 
 * https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html
 * https://blog.csdn.net/absurd/article/details/144340608
