@@ -1,0 +1,7 @@
+build_rp2040 
+build_rp2350
+3rd
+*.o
+*.so
+*.a
+*.swp

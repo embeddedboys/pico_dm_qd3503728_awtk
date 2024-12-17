@@ -1,0 +1,4 @@
+target extended-remote :3333
+monitor reset init
+b lcd_mem_fragment_create
+continue
