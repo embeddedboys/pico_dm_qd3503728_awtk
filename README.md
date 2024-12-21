@@ -1,5 +1,7 @@
 # 在树莓派 Pico 上运行 AWTK
 
+> 本文档只在 MacOS 上验证过，Ubuntu 请根据情况自行调整。
+
 ![pico](docs/images/pico_ui.jpg)
 
 ## 0. 安装环境
@@ -42,7 +44,7 @@ brew install arm-none-eabi-gdb
 * minicom
 
 ```sh
-sudo apt install minicom
+brew install minicom
 ```
 
 ## 1. 下载源码
