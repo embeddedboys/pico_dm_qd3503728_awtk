@@ -5,3 +5,4 @@ build_rp2350
 *.so
 *.a
 *.swp
+src/demos/hello
