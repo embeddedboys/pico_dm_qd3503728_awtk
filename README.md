@@ -72,6 +72,12 @@ git clone https://github.com/raspberrypi/pico-sdk.git 3rd/pico-sdk
 git clone https://github.com/zlgopen/awtk.git src/awtk
 ```
 
+* 下载 demo app 的源码
+
+```
+git clone https://github.com/zlgopen/awtk-demo-app.git src/demos/hello
+```
+
 ## 2. 编译
 
 * 编译 awtk
