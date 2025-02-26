@@ -1,5 +1,4 @@
-
-file(GLOB APP_SOURCE_FILES 
+file(GLOB APP_SOURCE_FILES
   hello/src/*.c
   hello/src/common/*.c
   hello/src/pages/*.c

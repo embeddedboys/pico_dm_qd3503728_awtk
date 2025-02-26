@@ -184,5 +184,10 @@
 
  #define HAS_SLEEP_US64 1
 
+#define htonl(n) n
+#define ntohl(n) n
+#define htons(n) n
+#define ntohs(n) n
+
 #endif /*AWTK_CONFIG_H*/
 

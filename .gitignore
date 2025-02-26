@@ -1,8 +1,9 @@
-build_rp2040 
-build_rp2350
+.cache
+build
+build-pico2
+build-pico2-riscv
 3rd
 *.o
 *.so
 *.a
 *.swp
-src/demos/hello

@@ -1,0 +1,6 @@
+[submodule "src/awtk"]
+	path = src/awtk
+	url = https://gitee.com/embeddedboys/awtk
+[submodule "src/demos/hello"]
+	path = src/demos/hello
+	url = https://gitee.com/embeddedboys/awtk-demo-app

@@ -12,6 +12,10 @@ add_library(awtk
   ${AWTK_PORT_RAW_SOURCE_FILES}
   )
 
+target_compile_definitions(awtk PRIVATE
+  MINIZ_NO_TIME
+)
+
 add_subdirectory(board)
 add_subdirectory(demos)
 #add_subdirectory(tests)

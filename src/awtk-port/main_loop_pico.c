@@ -28,13 +28,16 @@
 #include "lcd/lcd_mem_fragment.h"
 #include "main_loop/main_loop_simple.h"
 
+#include "ft6236.h"
+
 ret_t platform_disaptch_input(main_loop_t* l) {
   int x = 0;
   int y = 0;
-  int pressed = 0;
-  TP_Read(&x, &y, &pressed);
-  
-  if (pressed) {
+
+  x = ft6236_read_x();
+  y = ft6236_read_y();
+
+  if (ft6236_is_pressed()) {
     main_loop_post_pointer_event(main_loop(), TRUE, x, y);
   } else {
     main_loop_post_pointer_event(main_loop(), FALSE, x, y);
