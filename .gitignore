@@ -1,5 +1,4 @@
 .cache
-assets
 build
 build-pico2
 build-pico2-riscv
