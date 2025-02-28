@@ -5,7 +5,7 @@ include(cmake/pico_sdk_import.cmake)
 include(cmake/pico_extras_import_optional.cmake)
 include(cmake/include_path.cmake)
 
-project(pico_examples C CXX ASM)
+project(pico_dm_qd3503728_awtk C CXX ASM)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)

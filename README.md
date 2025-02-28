@@ -78,13 +78,13 @@ cd -
 ### picotool
 
 ```bash
-sudo picotool -fuvx build/src/demos/app.uf2
+sudo picotool -fuvx build/src/demos/pico_dm_qd3503728_awtk.uf2
 ```
 
 ### openocd
 
 ```bash
-openocd -f interface/cmsis-dap.cfg -f target/rp2350-riscv.cfg -s tcl -c "adapter speed 10000" -c "program build/src/demos/app.elf verify reset exit"
+openocd -f interface/cmsis-dap.cfg -f target/rp2350-riscv.cfg -s tcl -c "adapter speed 10000" -c "program build/src/demos/pico_dm_qd3503728_awtk.elf verify reset exit"
 ```
 
 （暂未实现）或者位于对应 build 目录下
